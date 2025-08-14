@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        background-color: #000;
+           font-family: Arial, Helvetica, sans-serif;
+        padding-left: 270px;
+     
+    }
+  
+    .left-sidebar{
+       
+        background-color: #121212;
+        position: fixed;
+    
+        left:0;
+        top:10px;
+        bottom: 0;
+         border-radius: 10px;
+        width:250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+      
+    }
+    .first-inner-side{
+        background-color: #121212;
+        border-radius: 10px;
+    }
+    ul li{
+        margin-top: 24px;
+        list-style: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-left: 30px;
+        transition: 0.5s ease-in;
+        color: #ffffff;
+        opacity:1;
+    }
+    /* ul li:hover{
+        background-color: rgb(238, 213, 205);
+        height:30px;
+        margin-left: -30px;
+        padding: 3px;
+        text-align: center;
+        vertical-align: center;
+        border-radius: 10px;
+        border: 1px solid rgb(242, 162, 135); 
+        width:90%;
+    } */
+.side-bar-description{
+    
+    margin-left: 30px;
+    font-size: 10px;
+    margin-top: 50px;
+    opacity:0.6;
+}
+     .second-inner-side{
+        /* background-color: #eeefff; */
+        border-radius: 10px;
+    }
+
+     .third-inner-side{
+        /* background-color: #eeefff; */
+        border-radius: 10px;
+    }
+  .side-bar-description{
+    color:#fff;
+  }
+    .logo{
+        text-align: center;
+        color: orangered;
+        font-size: 22px;
+        margin-left: -10px;
+    }
+    .grow{
+        height:30px;
+        margin-left: -20px;
+        margin-right: 10px;
+    }
+    .top{
+ background-color: #121212;
+ margin-left: 10px;
+    padding-left: 100px;
+  
+    height:60px;
+    position: fixed;
+    right:10px;
+    border-radius: 10px;
+    left:270px;
+    top:20px;
+    z-index: 1;
+    display: flex;
+    
+      /* z-index: 1; */
+    }
+    .middle-section{
+        width:98%;
+        height:85vh;
+        /* background-color: #ccc; */
+        margin-top: 100px;
+        margin-left: 10px;
+       
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        gap:20px;
+    }
+    .first-middle{
+  background-color: #000;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  gap:15px;
+    }
+        .second-middle{
+    background-color: #000;
+        border-radius: 10px;
+      
+    
+    }
+    .four-groups-second-middle{
+        /* background-color: indigo; */
+         height:60vh;
+
+
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    }
+    .first-section-middle{
+        background-color: #121212;
+        border-radius: 10px;
+        position: relative;
+    }
+    .congrats{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:orangered;
+          margin-left: 30px;
+    }
+    .sales-percent{
+        margin-left: 30px;
+        color: #ffffff;
+        font-size: 14px;
+        opacity: 0.6;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 26px;
+    }
+    .badges{
+ margin-left: 30px;
+        color: rgb(231, 110, 66);
+        font-size: 14px;
+        background-color: transparent;
+        margin-top: 15px;
+        padding:7px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid rgb(236, 108, 61);
+       
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
+    .second-section-middle{
+        background-color: #121212;
+         border-radius: 10px;
+    }
+
+
+
+    .right-first-small-box{
+  background-color: #121212;
+    border-radius: 10px;
+    }
+    .right-second-small-box{
+        background-color:#121212;
+          border-radius: 10px;
+    }
+      .right-second-small-box{
+        background-color: #121212;
+          border-radius: 10px;
+    }
+      .right-third-small-box{
+        background-color: #121212;
+          border-radius: 10px;
+    }
+      .right-fourth-small-box{
+        background-color: #121212;
+          border-radius: 10px;
+    }
+    .right-fifth-small-box{
+        background-color: #121212;
+        border-radius: 10px;
+      
+       
+    }
+
+     
+    .last-right-small-box{
+   display: grid;
+     margin-top: 15px;
+   height: 35vh;
+   border-radius: 10px;
+   
+   /* background-color: red; */
+    }
+
+    .top-profile{
+    flex:0.5;
+    /* height:40px; */
+    /* background-color: purple; */
+    display: flex;
+    margin-right: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+   
+    }
+    .top-search{
+        flex:3;
+        width:10px;
+        margin-left: -30px;
+         outline: none;
+         position: relative;
+         background-color: transparent;
+         font-size: 16px;
+         color: #fff;
+         border: 0px;
+
+        /* height:30px; */
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+  .search-icon{
+    width:20px;
+    height:20px;
+    position: absolute;
+    left:20px;
+    top:19px;
+    background-color: transparent;
+
+  }
+  .arrow-img{
+     width:7px;
+    height:7px;
+    margin-left: 70px;
+    position: absolute;
+    right: 20px;
+  
+    top:5px;
+  }
+  .top-profile-box{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+   
+    background-color: orangered;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  .profile-name{
+    flex:1;
+    font-size: 16px;
+    color: rgb(237, 85, 30);
+    font-weight: 600;
+    margin-top: 20px;
+
+  }
+  .profile-image{
+  width:45px;
+    height:45px;
+ 
+    border-radius: 50%;
+    position: relative;
+  }
+  .dot{
+    position: absolute;
+    right:28px;
+    top:42px;
+    background-color: rgb(11, 176, 11);
+    width:7px;
+    border: 1.6px solid #fff;
+    height:7px;
+    border-radius: 50%;
+  }
+  .dashboard-image{
+    width:200px;
+    height:200px;
+    position: absolute;
+    right:13px;
+    bottom:-13px;
+
+  }
+  .account-settings-div{
+    position: relative;
+  }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+
+            <div class="left-sidebar">
+
+                <div class="first-inner-side">
+                    <h3 class="logo"><img src="grow2.png"class="grow" alt="">feenick1 ltd</h3>
+                 <ul>
+                    <li><img src=""class="grow" alt="">Dashboard</li>
+                  <div class="account-settings-div">   <li>Layouts</li><img src="arrow.png"class="arrow-img" alt=""></div>
+                    
+                
+                 </ul>
+                 <p class="side-bar-description">--- PAGES</p>
+                </div>
+                <div class="second-inner-side">
+
+                      <ul>
+                  <div class="account-settings-div">
+                     <li>Account Settings </li>
+                     <img src="arrow.png"class="arrow-img" alt="">
+                     
+                  </div> 
+              
+                  <div class="account-settings-div">
+                     <li>Authentications</li>
+                                  <img src="arrow.png"class="arrow-img" alt="">
+                  </div>  
+                     <div class="account-settings-div">
+                         <li>Misc</li>
+                         <img src="arrow.png"class="arrow-img" alt="">
+                     </div>  
+                    
+                
+                 </ul>
+                 <p class="side-bar-description">--- COMPONENTS</p>
+                </div>
+                <div class="third-inner-side">
+
+                      <ul>
+                    <li>Cards</li>
+                   <div class="account-settings-div"><li>User Interface</li><img src="arrow.png"class="arrow-img" alt=""></div>  
+                    <div class="account-settings-div"><li>Extended UI</li> <img src="arrow.png"class="arrow-img" alt=""></div>    
+                      <li>Boxicons</li>    
+                      </ul>
+
+                    
+                
+                
+                 <p class="side-bar-description">-- FORMS & TABLES</p>
+                </div>
+
+
+            </div>
+
+            <div class="top">
+
+ <!-------------top bar----------->
+               <input type="text"placeholder=" Search..."class="top-search">
+                <img src="search.png"class="search-icon" alt="">
+               <div class="top-profile">
+                <p class="profile-name">caleb</p>
+                <div class="top-profile-box">
+                  <img src="photo5.png" class="profile-image"alt="">
+                  <div class="dot"></div>
+                </div>
+
+
+               </div>
+
+            </div>
+          
+        </div>
+
+
+        <section>
+            <div class="middle-section">
+                <div class="first-middle">
+
+   <div class="first-section-middle">
+    <p class="congrats">Congratulations Mr Caleboss !</p>
+    <p class="sales-percent">You have than 88% more sales today . Check your <br> new badge in your profile.</p>
+    <img src="Vision statement-rafiki (2).png"class="dashboard-image" alt="">
+   <button class="badges">View badges</button>
+</div>
+
+    <div class="second-section-middle"></div>
+
+                </div>
+                <div class="second-middle">
+
+                    <div class="four-groups-second-middle">
+
+                      <!---grid on the right small divs-->
+             
+             
+                    <div class="right-first-small-box">
+             <div class="top-inner-four-grid"></div>
+             <div class="profits"></div>
+
+
+                    </div>
+
+
+                    <div class="right-second-small-box"></div>
+                    <div class="right-third-small-box"></div>
+                    <div class="right-fourth-small-box"></div>
+
+                    </div>
+                    
+                    <div class="last-right-small-box">
+                        <div class="right-fifth-small-box"></div>
+
+                    </div>
+                   
+
+                   
+                    
+                </div>
+            </div>
+
+
+           
+        </section>
+    </main>
+    
+</body>
+</html>

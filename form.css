@@ -1,0 +1,78 @@
+body{
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width:32%;
+    /* height:600px; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 27%;
+    background-color: #000;
+    margin-top: 2%;
+}
+.title{
+    font-size:20px;
+    font-weight: 600;
+    color: #f88200;
+     margin-left: 36%;
+}
+.create{
+    font-size:18px;
+    color: #fff;
+}
+.enter{
+     font-size:13px;
+    color: #fff;
+}.label-form-group{
+ display: flex;
+    gap:20px;
+    /* flex-direction: column; */
+}
+input{
+    width:195px;
+    height:30px;
+    margin-left: -6px;
+    /* outline: none; */
+    border: 1px solid #333;
+    background-color: transparent;
+    display: block;
+    color: #fff;
+    border-radius: 3px;
+}
+.alllabels{
+  width: 300px;
+}
+label{
+     font-size:13px;
+    color: #fff;
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+.email-input{
+width:100%;
+}
+.agree{
+    color: #fff;
+    font-size: 14px;
+}
+.checkbox{
+    width:15px;
+    height:15px;
+    display: inline-block;
+}
+.create-btn{
+    width: 100%;
+    outline: none;
+    height:35px;
+    font-weight:600px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+
+    background:linear-gradient(45deg,#f88200,#ccc);
+    color: #000;
+
+}
